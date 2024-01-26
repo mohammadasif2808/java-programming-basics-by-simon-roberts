@@ -1,12 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package in.mohammadasif.helloworld;
 
 /**
  *
  * @author mohammad asif
+ * Email: mohammadasif2808@gmail.com
+ * Date: Jan 26, 2024
  */
 public class HelloWorld {
 
