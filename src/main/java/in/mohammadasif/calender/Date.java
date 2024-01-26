@@ -9,9 +9,9 @@ package in.mohammadasif.calender;
  */
 public class Date {
 
-    public int day;
-    public int month;
-    public int year;
+    private int day;
+    private int month;
+    private int year;
 
     public Date(int day, int month, int year) {
         this.day = day;
@@ -19,22 +19,39 @@ public class Date {
         this.year = year;
     }
 
+    public int getDay() {
+        return day;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    @Override
+    public String toString() {
+        return this.day + "/" + this.month + "/" + this.year;
+    }
+    
     public void nextDay() {
         int dayCount = daysInMonth(this.month, this.year);
-            this.day++;
-            if (this.day> dayCount) {
-                this.day =1;
-                this.month++;
-                if (this.month > 12) {
-                    this.month =1;
-                    this.year++;
-                }
+        this.day++;
+        if (this.day > dayCount) {
+            this.day = 1;
+            this.month++;
+            if (this.month > 12) {
+                this.month = 1;
+                this.year++;
             }
+        }
     }
 
     private int daysInMonth(int month, int year) {
         int rv;
-        switch(month) {
+        switch (month) {
             case 4:
             case 6:
             case 9:
@@ -45,7 +62,7 @@ public class Date {
                 if (isLeapYear(year)) {
                     rv = 29;
                 } else {
-                    rv =28;
+                    rv = 28;
                 }
                 break;
             default:
@@ -56,6 +73,6 @@ public class Date {
     }
 
     private boolean isLeapYear(int year) {
-        return (((year %4) == 0) && ((year % 100) != 0)) || ((year % 400) == 0);
+        return (((year % 4) == 0) && ((year % 100) != 0)) || ((year % 400) == 0);
     }
 }

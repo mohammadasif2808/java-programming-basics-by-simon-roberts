@@ -11,16 +11,10 @@ public class Calender {
     public static void main(String[] args) {
         Date today = new Date(29,02,2024);
         
-        System.out.println("Today is "
-            + today.day + "/"
-            + today.month + "/"
-            + today.year );
-        
+        System.out.println("Today is "+ today );
+            
         today.nextDay();
         
-        System.out.println("Tomorrow is "
-            + today.day + "/"
-            + today.month + "/"
-            + today.year );
+        System.out.println("Tomorrow is "+ today );
     }
 }
