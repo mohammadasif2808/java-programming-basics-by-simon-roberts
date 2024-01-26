@@ -3,6 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>in.mohammadasif</groupId>
     <artifactId>JavaProgrammingBasics</artifactId>
+    <name>JavaProgrammingBasics</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
@@ -11,5 +12,4 @@
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>in.mohammadasif.helloworld.HelloWorld</exec.mainClass>
     </properties>
-    <name>JavaProgrammingBasics</name>
 </project>
